@@ -1,0 +1,16 @@
+[package]
+name = "claudewatch"
+version = "0.0.1"
+edition = "2024"
+description = "Desktop app showing your Claude plan limits and Claude Code token usage"
+license = "MIT"
+repository = "https://github.com/DID-Software-Solutions/claudewatch"
+
+[profile.release]
+strip = true
+lto = true
+
+[dependencies]
+eframe = { version = "0.37.0", features = ["persistence"] }
+serde_json = "1.0.154"
+ureq = "3.5.2"
